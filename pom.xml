@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.atlaspuplabs.lumberjack</groupId>
   <artifactId>Lumberjack</artifactId>
-  <version>1.1.22.1.4.15</version>
+  <version>1.0.1.22.1.10</version>
   <name>Lumberjack</name>
-  <description>Simple yet robust logging tool</description>
+  <description>Dead simple Java logging</description>
 </project>
