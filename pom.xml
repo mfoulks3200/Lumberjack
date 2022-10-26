@@ -10,4 +10,14 @@
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+  
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>lumberjackrepo</id>
+      <name>Lumberjack Repo</name>
+      <url>https://github.com/mfoulks3200/Lumberjack.git</url>
+      <layout>default</layout>
+    </repository>
+  </distributionManagement>
 </project>
