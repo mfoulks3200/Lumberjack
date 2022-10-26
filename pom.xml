@@ -5,4 +5,9 @@
   <version>1.0.1.22.10.26</version>
   <name>Lumberjack</name>
   <description>Dead simple Java logging</description>
+  
+  <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
 </project>
