@@ -2,6 +2,8 @@
 
 A dead simple logging solution for simple Java projects.
 
+[![Maven Package](https://github.com/mfoulks3200/Lumberjack/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/mfoulks3200/Lumberjack/actions/workflows/maven-publish.yml)
+
 ## Features
 - Timestamps
 - Event Types
