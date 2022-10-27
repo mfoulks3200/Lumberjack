@@ -12,12 +12,10 @@
   </properties>
   
   <distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>lumberjackrepo</id>
-      <name>Lumberjack Repo</name>
-      <url>https://github.com/mfoulks3200/Lumberjack.git</url>
-      <layout>default</layout>
-    </repository>
+   <repository>
+    <id>github</id>
+    <name>GitHub mfoulks3200 Apache Maven Packages</name>
+    <url>https://maven.pkg.github.com/mfoulks3200/Lumberjack</url>
+   </repository>
   </distributionManagement>
 </project>
