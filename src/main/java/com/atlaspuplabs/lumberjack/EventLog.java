@@ -70,14 +70,14 @@ private static final long serialVersionUID = 1L;
 	 */
 	public static boolean showDebug = true;
 	
-
-	
 	/**
 	 * Create a new, blank {@link EventLog}. This method is private, to instantiate an event log, use {@link EventLog#initLog()} which checks for orphaned {@link EventLog} objects
 	 */
-	public EventLog() {
+	public EventLog(boolean showStartMessage) {
 		log = this;
-		showStartMessage();
+		if(showStartMessage) {
+			showStartMessage();
+		}
 		if(writeToFile) {
 			Runtime.getRuntime().addShutdownHook(new Thread() {
 				public void run() {
@@ -108,19 +108,19 @@ private static final long serialVersionUID = 1L;
 			});
 		}
 	}
-
-	
 	
 	/**
 	 * Create a new, blank {@link EventLog}. This method is private, to instantiate an event log, use {@link EventLog#initLog()} which checks for orphaned {@link EventLog} objects
 	 * @param writeLogToDisk Enable/Disable writing full event log to disk on program exit
 	 */
-	public EventLog(boolean writeLogToDisk) {
+	public EventLog(boolean showStartupMessage, boolean writeLogToDisk) {
 		writeToFile = writeLogToDisk;
-		new EventLog();
+		new EventLog(showStartupMessage);
 	}
 	
-	
+	public EventLog(){
+		new EventLog(false);
+	}
 	
 	/**
 	 * Get the specified {@link Event}

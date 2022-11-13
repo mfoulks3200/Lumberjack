@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		//Initialize EventLog
-		new EventLog();
+		new EventLog(true);
 		
 		//Optional: Initialize EventLog without dumping to file upon exit
 		//new EventLog(false);
